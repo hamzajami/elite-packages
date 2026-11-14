@@ -81,7 +81,7 @@ export const About: React.FC<AboutProps> = ({ currentLang }) => {
                   <div>
                     <span className="text-white/50 block text-[11px] uppercase">Facility Location:</span>
                     <span className="text-[#F2EFE9] font-medium text-sm block mt-0.5">
-                      Quaid-e-Azam Industrial Estate, Kot Lakhpat, Lahore
+                      15-KM Sheikhupura Road, Javed Nagar, Lahore
                     </span>
                   </div>
                 </div>
