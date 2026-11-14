@@ -351,7 +351,7 @@ export const Contact: React.FC<ContactProps> = ({ currentLang, prefilledProduct 
                   </span>
                 </div>
                 <span className="font-mono text-[10px] bg-white/[0.05] border border-white/10 text-[#3DE0D0] px-2.5 py-0.5 rounded-full">
-                  31.4428° N, 74.3298° E
+                  31.642596628778104, 74.19688369345413
                 </span>
               </div>
 
@@ -373,8 +373,8 @@ export const Contact: React.FC<ContactProps> = ({ currentLang, prefilledProduct 
                 </svg>
 
                 <div className="relative z-10 flex justify-between text-[10px] font-mono text-white/50">
-                  <span>SECTOR 3 · INDUSTRIAL ESTATE</span>
-                  <span>KOT LAKHPAT / FEROZEPUR RD</span>
+                  <span>JAVED NAGAR</span>
+                  <span>15-KM SHEIKHUPURA ROAD</span>
                 </div>
 
                 <div className="relative z-10 self-center flex flex-col items-center">
@@ -385,16 +385,16 @@ export const Contact: React.FC<ContactProps> = ({ currentLang, prefilledProduct 
                 </div>
 
                 <div className="relative z-10 flex justify-between text-[10px] font-mono text-white/50">
-                  <span>Lahore Ring Road (5 min)</span>
-                  <span>Heavy Vehicle Bay</span>
+                    <span>LAHORE</span>
+                    <span>PUNJAB, PAKISTAN</span>
                 </div>
               </div>
 
               <div className="text-xs text-white/50 font-mono">
-                Location: Quaid-e-Azam Industrial Estate, Kot Lakhpat, connected directly via Ferozepur Road and Southern Ring Road interchanges.
+                Location: 15-KM Sheikhupura Road, Javed Nagar, Lahore, 39030, Pakistan.
               </div>
               <a
-                href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(COMPANY_INFO.address)}`}
+                href={`https://maps.app.goo.gl/sF8bKieRBNHArme59)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-[#D4B27A] hover:text-[#E8D3AA] transition-colors"
