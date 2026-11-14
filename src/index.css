@@ -1,0 +1,133 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: 'Sora', 'Inter', system-ui, sans-serif;
+  --font-mono: 'Space Grotesk', ui-monospace, monospace;
+  
+  --color-charcoal-deep: #07080A;
+  --color-charcoal: #0B0D10;
+  --color-charcoal-card: #12151B;
+  --color-charcoal-light: #1A1E26;
+  --color-gold: #D4B27A;
+  --color-gold-light: #E8D3AA;
+  --color-gold-dark: #A8864E;
+  --color-teal: #3DE0D0;
+  --color-teal-glow: rgba(61, 224, 208, 0.25);
+  --color-cream: #F2EFE9;
+}
+
+/* Drifting background blooms */
+@keyframes bloom-drift-1 {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+    opacity: 0.35;
+  }
+  50% {
+    transform: translate(60px, 40px) scale(1.15);
+    opacity: 0.55;
+  }
+}
+
+@keyframes bloom-drift-2 {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1.1);
+    opacity: 0.25;
+  }
+  50% {
+    transform: translate(-50px, -35px) scale(0.9);
+    opacity: 0.45;
+  }
+}
+
+@keyframes pouch-float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(0.8deg);
+  }
+}
+
+@keyframes light-shimmer {
+  0% {
+    transform: translateX(-150%) skewX(-20deg);
+  }
+  100% {
+    transform: translateX(250%) skewX(-20deg);
+  }
+}
+
+.animate-bloom-1 {
+  animation: bloom-drift-1 18s ease-in-out infinite;
+}
+
+.animate-bloom-2 {
+  animation: bloom-drift-2 22s ease-in-out infinite;
+}
+
+.animate-pouch-float {
+  animation: pouch-float 7s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-bloom-1,
+  .animate-bloom-2,
+  .animate-pouch-float {
+    animation: none !important;
+  }
+}
+
+/* Glassmorphism helpers */
+.glass-panel {
+  background: rgba(18, 21, 27, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(242, 239, 233, 0.08);
+}
+
+.glass-panel-gold {
+  background: rgba(22, 24, 30, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(212, 178, 122, 0.25);
+}
+
+.glass-panel-glow {
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.6), 0 0 35px -5px rgba(212, 178, 122, 0.12);
+}
+
+.glass-pill {
+  background: rgba(242, 239, 233, 0.04);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(242, 239, 233, 0.12);
+}
+
+/* Custom dark scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B0D10;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #232832;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D4B27A;
+}
+
+/* Smooth scrollbar track for horizontal strip */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
