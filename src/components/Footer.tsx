@@ -31,7 +31,7 @@ export const Footer: React.FC<FooterProps> = ({ currentLang, onToggleLang }) => 
               Rotogravure and 7-color flexographic printing of food-grade flexible packaging in Lahore, Pakistan.
             </p>
             <div className="pt-2 text-white/40 text-[11px]">
-              Plant: Quaid-e-Azam Industrial Estate, Kot Lakhpat, Lahore
+              Factory: 15-KM Sheikhupura Road, Javed Nagar, Lahore
             </div>
           </div>
 
