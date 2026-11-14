@@ -52,7 +52,7 @@ export const COMPANY_INFO = {
   address: "15-KM shiekhupura Road, Javed Nagar, Lahore, Punjab, Pakistan",
   city: "Lahore, Pakistan",
   hours: "Monday – Saturday: 08:30 – 18:00 PKT (Sunday Closed)",
-  establishedStory: "Elite Packages operates an industrial flexible packaging manufacturing plant in Quaid-e-Azam Industrial Estate, Lahore. We manufacture printed barrier laminates and preformed pouches for food, beverage, and consumer goods companies across Pakistan. We stand for dimensional consistency, strict food-contact compliance, and scheduled factory dispatches without delays.",
+  establishedStory: "Elite Packages operates an industrial flexible packaging manufacturing plant at 15-KM shiekhupura road, Lahore. We manufacture printed barrier laminates and preformed pouches for food, beverage, and consumer goods companies across Pakistan. We stand for dimensional consistency, strict food-contact compliance, and scheduled factory dispatches without delays.",
   aboutTenets: [
     {
       title: "Dimensional Consistency",
