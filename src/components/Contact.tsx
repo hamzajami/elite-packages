@@ -394,14 +394,14 @@ export const Contact: React.FC<ContactProps> = ({ currentLang, prefilledProduct 
                 Location: 15-KM Sheikhupura Road, Javed Nagar, Lahore, 39030, Pakistan.
               </div>
               <a
-                href={`https://maps.app.goo.gl/sF8bKieRBNHArme59)}`}
+                href="https://maps.app.goo.gl/WnoxWsWCTAHaaGvH6"
                 target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-[#D4B27A] hover:text-[#E8D3AA] transition-colors"
-              >
-                <MapPin className="w-3.5 h-3.5" />
-                <span>Open in Google Maps</span>
-              </a>
+                  rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-[#D4B27A] hover:text-[#E8D3AA] transition-colors"
+>
+  <MapPin className="w-3.5 h-3.5" />
+  <span>Open in Google Maps</span>
+</a>
             </div>
 
           </div>
